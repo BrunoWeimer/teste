@@ -166,16 +166,37 @@
             </audio>
         </div>
 
-        <!-- Galeria de Vídeos -->
-        <div class="mt-10 w-full px-4">
-            <h2 class="text-2xl font-bold mb-4 text-center text-red-400">Nossos Momentos em Vídeo</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                ${[1,2,3,4,5,6,7].map(n => `<video class="thumb" onclick="openModal('Videos/video${n}.mp4')" muted preload="metadata">
-                    <source src="Videos/video${n}.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>`).join('')}
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+<!-- Galeria de Vídeos -->
+<div class="mt-10 w-full px-4">
+    <h2 class="text-2xl font-bold mb-4 text-center text-red-400">Nossos Momentos em Vídeo</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <video class="thumb" onclick="openModal('Videos/video1.mp4')" muted preload="metadata">
+            <source src="Videos/video1.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <video class="thumb" onclick="openModal('Videos/video2.mp4')" muted preload="metadata">
+            <source src="Videos/video2.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <video class="thumb" onclick="openModal('Videos/video3.mp4')" muted preload="metadata">
+            <source src="Videos/video3.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <video class="thumb" onclick="openModal('Videos/video4.mp4')" muted preload="metadata">
+            <source src="Videos/video4.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <video class="thumb" onclick="openModal('Videos/video5.mp4')" muted preload="metadata">
+            <source src="Videos/video5.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <video class="thumb" onclick="openModal('Videos/video6.mp4')" muted preload="metadata">
+            <source src="Videos/video6.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <video class="thumb" onclick="openModal('Videos/video7.mp4')" muted preload="metadata">
+            <source src="Videos/video7.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </div>
+</div>
