@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bruno e Emili</title>
-    <meta name="description" content="Página dedicada ao amor entre Bruno e Emili, com lembranças, frases e músicas.">
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Heart_coraz%C3%B3n.svg/1024px-Heart_coraz%C3%B3n.svg.png">
+    <meta name="description" content="Página dedicada ao amor entre Bruno e Emili, com lembranças, frases e músicas." />
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Heart_coraz%C3%B3n.svg/1024px-Heart_coraz%C3%B3n.svg.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -35,13 +35,16 @@
             max-width: 90vw;
             max-height: 80vh;
         }
-        video.thumb {
+        img.thumb {
             cursor: pointer;
             border: 2px solid #f87171;
             border-radius: 0.5rem;
             transition: opacity 0.3s;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
-        video.thumb:hover {
+        img.thumb:hover {
             opacity: 0.8;
         }
     </style>
@@ -131,7 +134,7 @@
             modal.innerHTML = `
                 <div onclick="this.parentElement.remove()" class="absolute top-4 right-4 text-white text-2xl cursor-pointer">&times;</div>
                 <video controls autoplay>
-                    <source src="${videoSrc}" type="video/mp4">
+                    <source src="${videoSrc}" type="video/mp4" />
                     Seu navegador não suporta vídeo.
                 </video>
             `;
@@ -147,7 +150,7 @@
 <body class="font-sans bg-black text-gray-200 flex flex-col items-center justify-start min-h-screen px-4">
     <section id="home" class="w-full max-w-[414px] flex flex-col items-center text-center">
         <div class="mt-10">
-            <img id="slideshow" src="" alt="Foto do casal Bruno e Emili" class="rounded-lg shadow-lg w-full h-auto border-4 border-red-500">
+            <img id="slideshow" src="" alt="Foto do casal Bruno e Emili" class="rounded-lg shadow-lg w-full h-auto border-4 border-red-500" />
         </div>
         <p class="text-xl mt-6 font-bold bg-red-500 text-white px-3 py-2 rounded-lg">Bruno e Emili 💕</p>
         <p class="text-xl font-semibold">Desde 19 de Outubro de 2024</p>
@@ -161,7 +164,7 @@
 
         <div class="mt-8 w-full flex justify-center">
             <audio controls autoplay class="w-full">
-                <source src="Music/maria.mp3" type="audio/mpeg">
+                <source src="Music/maria.mp3" type="audio/mpeg" />
                 Seu navegador não suporta o elemento de áudio.
             </audio>
         </div>
@@ -170,34 +173,13 @@
         <div class="mt-10 w-full px-4">
             <h2 class="text-2xl font-bold mb-4 text-center text-red-400">Nossos Momentos em Vídeo</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <video class="thumb" onclick="openModal('Videos/video1.mp4')" muted preload="metadata">
-                    <source src="Videos/video1.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-                <video class="thumb" onclick="openModal('Videos/video2.mp4')" muted preload="metadata">
-                    <source src="Videos/video2.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-                <video class="thumb" onclick="openModal('Videos/video3.mp4')" muted preload="metadata">
-                    <source src="Videos/video3.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-                <video class="thumb" onclick="openModal('Videos/video4.mp4')" muted preload="metadata">
-                    <source src="Videos/video4.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-                <video class="thumb" onclick="openModal('Videos/video5.mp4')" muted preload="metadata">
-                    <source src="Videos/video5.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-                <video class="thumb" onclick="openModal('Videos/video6.mp4')" muted preload="metadata">
-                    <source src="Videos/video6.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
-                <video class="thumb" onclick="openModal('Videos/video7.mp4')" muted preload="metadata">
-                    <source src="Videos/video7.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeo.
-                </video>
+                <img src="Videos/thumb1.jpg" alt="Thumb 1" class="thumb" onclick="openModal('Videos/video1.mp4')" />
+                <img src="Videos/thumb2.jpg" alt="Thumb 2" class="thumb" onclick="openModal('Videos/video2.mp4')" />
+                <img src="Videos/thumb3.jpg" alt="Thumb 3" class="thumb" onclick="openModal('Videos/video3.mp4')" />
+                <img src="Videos/thumb4.jpg" alt="Thumb 4" class="thumb" onclick="openModal('Videos/video4.mp4')" />
+                <img src="Videos/thumb5.jpg" alt="Thumb 5" class="thumb" onclick="openModal('Videos/video5.mp4')" />
+                <img src="Videos/thumb6.jpg" alt="Thumb 6" class="thumb" onclick="openModal('Videos/video6.mp4')" />
+                <img src="Videos/thumb7.jpg" alt="Thumb 7" class="thumb" onclick="openModal('Videos/video7.mp4')" />
             </div>
         </div>
     </section>
